@@ -20,20 +20,20 @@ import android.app.Activity;
 import android.inputmethodservice.KeyboardView.OnKeyboardActionListener;
 import android.view.KeyEvent;
 
-/***
- * Listener da associare ad un oggetto KeyboardView in modo tale che quando
- * viene premuto un tasto il corrispondente evento viene girato all'activity
- * passata al costruttore
- */
+/ ***
+  * Listener to bind to a KeyboardView object in such a way that when
+  * A key is pressed the corresponding event is turned to the Activity
+  * Passed to the constructor
+  * /
 public class BasicOnKeyboardActionListener implements OnKeyboardActionListener {
 
 	private Activity mTargetActivity;
 
 	/***
 	 * 
-	 * @param targetActivity
-	 *            Activity a cui deve essere girato l'evento
-	 *            "pressione di un tasto sulla tastiera"
+	 * @param TargetActivity
+	 *    Activity to which must be turned the event
+	 *    "key press on the keyboard"
 	 */
 	public BasicOnKeyboardActionListener(Activity targetActivity) {
 		mTargetActivity = targetActivity;
