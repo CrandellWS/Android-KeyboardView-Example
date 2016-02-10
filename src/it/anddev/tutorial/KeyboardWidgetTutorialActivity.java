@@ -45,9 +45,8 @@ public class KeyboardWidgetTutorialActivity extends Activity {
 
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
-				// Dobbiamo intercettare l'evento onTouch in modo da aprire la
-				// nostra tastiera e prevenire che venga aperta quella di
-				// Android
+				// We have to catch the event on Touch to open the keypad and prevent our
+				// to be open to Android
 				showKeyboardWithAnimation();
 				return true;
 			}
@@ -61,7 +60,7 @@ public class KeyboardWidgetTutorialActivity extends Activity {
 	}
 
 	/***
-	 * Mostra la tastiera a schermo con una animazione di slide dal basso
+	 * Display the screen keyboard with an animation slide from bottom
 	 */
 	private void showKeyboardWithAnimation() {
 		if (mKeyboardView.getVisibility() == View.GONE) {
